@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans|Rokkitt');
+
+#selectandedit-div { 
+		position: relative;
+		width: calc(100% - 12px);
+		padding: 6px;
+		z-index: 400;
+		max-height: 140px;
+		transition: max-height .2s ease;
+		background-image: url('images/cork-background-img.png');
+		background-size: calc(100% + 12px);
+		-webkit-box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+#selectandedit-div:hover,
+#selectandedit-div:focus,
+#selectandedit-div:active {
+	max-height: 600vh;
+}
+
+#selectandedit-title {
+	font-size: 160%;
+	background: #1F0068;
+	color: #fff;
+	padding: 5px;
+	font-family: 'Bubblegum Sans', 'Lucida Grande', cursive;
+}
+
+.selectandedit-counter {
+	visibility: visible;
+	display: block;
+	width: calc(100% - 20px);
+	font-family: 'Bubblegum Sans', 'Lucida Grande', cursive;
+	margin: 8px 10px 0px 10px;
+	background-color: #fff;
+	max-height: 100px;
+	opacity: 1;
+	transition: all .2s ease;
+	border-right: 1px solid #444;
+	border-bottom: 1px solid #444;
+}
+
+.selectandedit-number-of-posts {
+	display: inline-block;
+	width: 49%;
+	font-size: 136%;
+	padding: 3px 0px 3px 0px;
+	text-align: center;
+	font-weight: bold;
+	color: #060028;
+}
+
+.selectandedit-number-of-pages {
+	display: inline-block;
+	width: calc(50% - 2px);
+	font-size: 136%;
+	text-align: center;
+	padding: 3px 0px 3px 0px;
+	font-weight: bold;
+	color: #060028;
+}
+
+#selectandedit-div:hover .selectandedit-counter {
+	visibility: collapse;
+	margin: 0px;
+	max-height: 0px;
+	opacity: 0;
+}
+
+.selectandedit-list-section {
+	width: calc(100% - 20px);
+	padding: 0px;
+	margin: 0px;
+	transition: all .4s ease;
+}
+
+#selectandedit-div:hover .selectandedit-list-section,
+#selectandedit-div:active .selectandedit-list-section,
+#selectandedit-div:focus .selectandedit-list-section {
+	margin: 8px 10px 0px 10px;
+}
+
+.selectandedit-list-title {
+	visibility: collapse;
+	display: block;
+	font-family: 'Bubblegum Sans', 'Lucida Grande', cursive;
+	opacity: 0;
+	color: #fff;
+	background: #659FCD;
+	font-size: 14pt;
+	max-height: 0px;
+	border-left: 0px;
+	border-right: 1px solid #444;
+	border-bottom: 1px solid #444;
+	transition: all .4s ease;
+}
+
+#selectandedit-div:hover .selectandedit-list-title,
+#selectandedit-div:active .selectandedit-list-title,
+#selectandedit-div:focus .selectandedit-list-title {
+	visibility: visible;
+	opacity: 1;
+	padding: 3px;
+	max-height: 40px;
+}
+
+.selectandedit-post-list {
+	visibility: collapse;
+	opacity: 0;
+	display: block;
+	overflow: scroll;
+	max-height: 0em;
+	margin: 0px;
+	font-size: 12pt;
+	line-height: 12pt;
+	position: relative;
+	background-color: #FFEEBC;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #777;
+	padding: 4px;
+	width: calc(100% - 9px);
+	transition: all .4s ease;
+}
+
+.selectandedit-page-list {
+	visibility: collapse;
+	opacity: 0;
+	display: block;
+	overflow: scroll;
+	max-height: 0em;
+	margin: 0px;
+	font-size: 12pt;
+	line-height: 12pt;
+	position: relative;
+	background-color: #D4FF87;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #777;
+	padding: 4px;
+	width: calc(100% - 9px);
+	transition: all .4s ease;
+}
+
+#selectandedit-div:hover .selectandedit-post-list,
+#selectandedit-div:active .selectandedit-post-list,
+#selectandedit-div:focus .selectandedit-post-list,
+#selectandedit-div:hover .selectandedit-page-list,
+#selectandedit-div:active .selectandedit-page-list,
+#selectandedit-div:focus .selectandedit-page-list {
+	visibility: visible; 
+	opacity: 1;
+	min-height: 3em;
+	max-height: 12em;
+}
+
+a.selectandedit-post-link:link,
+a.selectandedit-post-link:visited {
+	font-family: 'Rokkitt', serif;
+	display: block;
+	cursor: pointer;
+	padding: 4px;
+	border-bottom: 2px solid #FFB195;
+	text-decoration: none;
+	color: #060028;
+	background-color: #FFEEBC;
+	font-weight: bold;
+}
+
+a.selectandedit-post-link:hover,
+a.selectandedit-post-link:active,
+a.selectandedit-post-link:focus {
+	color: #060028;
+	cursor: pointer;
+	background-color: #FFBC0C;
+}
+
+a.selectandedit-page-link:link,
+a.selectandedit-page-link:visited {
+	font-family: 'Rokkitt', serif;
+	display: block;
+	cursor: pointer;
+	padding: 4px;
+	border-bottom: 2px solid #8EFF71;
+	text-decoration: none;
+	color: #060028;
+	background-color: #E9FFBF;
+	font-weight: bold;
+}
+
+a.selectandedit-page-link:hover,
+a.selectandedit-page-link:active,
+a.selectandedit-page-link:focus {
+	color: #060028;
+	cursor: pointer;
+	background-color: #A0FF5F;
+}
+
+.selectandedit-section-box-shadow {
+	visibility: collapse;
+	opacity: 0;
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(50, 47, 37, 0);
+    -moz-box-shadow:    2px 2px 9px 0px rgba(50, 47, 37, 0);
+	box-shadow:         2px 2px 9px 0px rgba(50, 47, 37, 0);
+	transition: all .2s ease;
+}
+
+#selectandedit-div:hover .selectandedit-section-box-shadow,
+#selectandedit-div:active .selectandedit-section-box-shadow,
+#selectandedit-div:focus .selectandedit-section-box-shadow {
+	visibility: visible;
+	opacity: 1;
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(50, 47, 37, .8);
+    -moz-box-shadow:    2px 2px 9px 0px rgba(50, 47, 37, .8);
+	box-shadow:         2px 2px 9px 0px rgba(50, 47, 37, .8);
+}
+
+.selectandedit-counter-box-shadow {
+	visibility: visible;
+	opacity: 1;
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(50, 47, 37, .8);
+    -moz-box-shadow:    2px 2px 9px 0px rgba(50, 47, 37, .8);
+	box-shadow:         2px 2px 9px 0px rgba(50, 47, 37, .8);
+	transition: all .2s ease;
+}
+
+#selectandedit-div:hover .selectandedit-counter-box-shadow,
+#selectandedit-div:active .selectandedit-counter-box-shadow,
+#selectandedit-div:focus .selectandedit-counter-box-shadow {
+	visibility: collapse;
+	opacity: 0;
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(50, 47, 37, 0);
+    -moz-box-shadow:    2px 2px 9px 0px rgba(50, 47, 37, 0);
+	box-shadow:         2px 2px 9px 0px rgba(50, 47, 37, 0);
+}
+
+.selectandedit-plugin-author-credit {
+		font-size: 80%;
+		font-family: 'Rokkitt', serif;
+		cursor: pointer;
+}
+
+a.selectandedit-plugin-author-credit:link,
+a.selectandedit-plugin-author-credit:visited,
+a.selectandedit-plugin-author-credit:active,
+a.selectandedit-plugin-author-credit:focus,
+a.selectandedit-plugin-author-credit:hover {
+		color: #fff;
+		text-decoration: none;
+}
